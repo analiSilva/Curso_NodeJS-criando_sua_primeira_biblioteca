@@ -27,22 +27,6 @@ async function pegaArquivo(caminhoArquivo){
   } 
 }
 
-/* function pegaArquivo(caminhoArquivo){
-  const encoding = "utf-8";
-  fs.promises
-  .readFile(caminhoArquivo, encoding)
-  .then((texto) => console.log(chalk.blue(texto)))
-  .catch((erro) => trataErro(erro))
-} */
+//pegaArquivo('./arquivos/texto1.md')
 
-/* function pegaArquivo(caminhoArquivo) {
-  const encoding = "utf-8"
-  fs.readFile(caminhoArquivo, encoding, (erro, texto) => {
-    if(erro) {
-      trataErro(erro);
-    }
-    console.log(chalk.green(texto))
-  })
-} */
-
-pegaArquivo('./arquivos/texto1.md')
+module.exports = pegaArquivo;
